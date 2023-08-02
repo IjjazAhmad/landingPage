@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    background-image: url(./images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ---------------------- navbar styling -------------------- */
+/* header{
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;} */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+nav p b{
+    margin-left: 40px;
+}
+.upperNavbar{
+    background-color: #f7542b;
+    color: #fff;
+}
+
+/* ------------------------------ logo styling start---------- */
+
+nav .logo a {
+    text-decoration: none;
+}
+
+nav .logo a .logo-icon {
+    font-size: 2rem;
+    border-radius: 20px;
+    background-color: #f7542b;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: #fff;
+    padding-top: 8px;
+    padding-left: 7px;
+
+}
+
+nav .logo a .logo-icon i {
+    font-size: 5rem;
+}
+
+nav .logo a .logo-name {
+    font-size: 2.5rem;
+    color: rgb(231, 18, 18);
+    font-family: 'Rubik Puddles', cursive;
+    margin-left: 5px;
+}
+
+/* ------------------------------ logo styling end ---------- */
+
+/* ------------------- nav link styling ------------------ */
+.navbar {
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    font-family: 'NTR', sans-serif;
+    
+}
+
+.navbar .nav-link ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .nav-link ul li {
+    list-style: none;
+}
+
+.navbar .nav-link ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    color: #000;
+}
+
+.navbar .nav-link ul li a:hover {
+    color: #dc2f02;
+}
+
+/* ------------------- nav link styling End ------------------ */
+
+/* --------------- search bar styling -------------- */
+
+
+.search-container {
+    background: #fff;
+    height: 40px;
+    border-radius: 30px;
+    padding: 20px 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+}
+
+.search-container:hover>.search-input {
+    width: 100px;
+}
+
+
+.search-container .search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+.search-container .search-input:focus {
+    width: 100px;
+}
+.search-container .search-btn ion-icon {
+    color: #dc2f02;
+    font-size: 2rem;
+
+}
+
+@keyframes hoverShake {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    25% {
+        transform: skew(5deg, 5deg);
+    }
+
+    75% {
+        transform: skew(-5deg, -5deg);
+    }
+
+    100% {
+        transform: skew(0deg, 0deg);
+    }
+}
+
+.search-container:hover {
+    animation: hoverShake 0.15s linear 3;
+}
+
+/*-------------------------  main --------------------------- */
+
+main .herosection {
+    color: #fff;
+    display: flex;
+    height: 80vh;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5rem;
+}
+main .herosection h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Rubik Microbe', cursive;
+}
+main .herosection button{
+   color: #fff;
+   background-color: #dc2f02;
+   padding: 10px 20px;
+   font-size: 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+main .herosection button:hover{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+/* ----------------------- footer styling ------------- */
+footer{
+    box-shadow: rgba(0, 0, 0, 0.2) 5px -10px 20px 20px;
+    text-align: center;
+}
+.footer-conyainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .icon {
+    margin: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+footer .whatsapp:hover {
+    color: #25D366;
+    cursor: pointer;
+
+}
+
+footer .youtube:hover {
+    color: #dc2f02;
+    cursor: pointer;
+}
+
+footer .instagram:hover {
+    color: rgb(195, 42, 163);
+    cursor: pointer;
+}
+
+footer .facebook:hover {
+    color: rgb(19, 98, 181);
+    cursor: pointer;
+}
+
+footer .twitter:hover {
+    color: rgb(21, 129, 244);
+    cursor: pointer;
+}
+
+/* ------------------- footer styling end --------------- */

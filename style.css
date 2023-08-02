@@ -28,14 +28,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 50px;
-}
-nav p b{
-    margin-left: 40px;
-}
-.upperNavbar{
-    background-color: #f7542b;
-    color: #fff;
+    margin: 10px 50px;
 }
 
 /* ------------------------------ logo styling start---------- */
@@ -239,3 +232,34 @@ footer .twitter:hover {
 }
 
 /* ------------------- footer styling end --------------- */
+
+
+@media only screen and (max-width:400px){
+    .navbar {     
+        margin-top: 0px;    
+    }
+    .navbar .nav-link ul li a {
+        padding:0px 5px;
+    }
+    main .herosection { 
+        height: 80vh;
+        margin-left: 1rem;
+    }
+    main .herosection h1{
+        font-size: 1rem;
+    }
+    main .herosection button{
+       color: #fff;
+       padding: 5px 10px;
+       font-size: 10px;
+       
+    }
+    footer .icon {
+        margin: 5px 10px;
+        font-size: 1rem;
+        font-weight: bolder;
+        margin-bottom: 2px;
+    }
+    
+
+}
